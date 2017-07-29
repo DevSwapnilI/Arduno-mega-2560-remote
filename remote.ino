@@ -1,4 +1,5 @@
-   #include <PS2X_lib.h>  //for v1.6
+//this code made for wired ps2 remote PLAYSTATION "2 DUALSHOCK 2 CONTROLLER REMOTE (ORIGINAL)-(WIRED)"
+#include <PS2X_lib.h>  //for v1.6
 
 #define PS2_DAT        13   //14    
 #define PS2_CMD        11  //15
