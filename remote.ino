@@ -1,4 +1,4 @@
-//this code made for wired ps2 remote PLAYSTATION "2 DUALSHOCK 2 CONTROLLER REMOTE (ORIGINAL)-(WIRED)"
+
 #include <PS2X_lib.h>  //for v1.6
 
 #define PS2_DAT        13   //14    
@@ -60,10 +60,10 @@ void setup()
     Serial.println("holding L1 or R1 will print out the analog stick values.");
   }  
   else if(error == 1)
-    Serial.println("No controller found, check wiring, see readme.txt to enable debug. visit www.billporter.info for troubleshooting tips");
+    Serial.println("No controller found, check wiring, see readme.txt to enable debug.");
    
   else if(error == 2)
-    Serial.println("Controller found but not accepting commands. see readme.txt to enable debug. Visit www.billporter.info for troubleshooting tips");
+    Serial.println("Controller found but not accepting commands. see readme.txt to enable debug.");
 
   else if(error == 3)
     Serial.println("Controller refusing to enter Pressures mode, may not support it. ");
@@ -82,12 +82,7 @@ void setup()
 }
 
 void loop() {
-  /* You must Read Gamepad to get new values and set vibration values
-     ps2x.read_gamepad(small motor on/off, larger motor strenght from 0-255)
-     if you don't enable the rumble, use ps2x.read_gamepad(); with no values
-     You should call this at least once a second
-   */
-/*------------------OUTER IF BLOCK------------------*/
+ 
   if(error == 1) //skip loop if no controller found
     return; 
     /*------------------INNER IF BLOCK------------------*/
